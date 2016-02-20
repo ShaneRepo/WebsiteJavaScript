@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A personal portfolio of a student computer programmer">
+    <meta name="keywords" content="about me, computer programmer, software developer">
+    <meta name="author" content="Shane Teall">
+    <title>About</title>
+    <link rel="shortcut icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#navTop').slicknav({prependTo:"#mobileMenu"});
+        });
+    </script>
+    <script>
+        $(function() {
+            $( "#accordion" ).accordion();
+        });
+    </script>
+
+</head>
+<body>
+<!--start of the page header-->
+<header>
+    <picture>
+        <img src="images/Icons2/medium/%23Ideas.png" alt="Computer logo" usemap="#logo">
+    </picture>
+    <!--image map to make logo clickable and return to homepage-->
+    <map name ="logo">
+        <area href="index.html" alt="Logo" title="Logo" shape="rect" coords="2,1,144,123">
+    </map>
+    <h1>Shane Teall</h1>
+    <h2>Leveling up everyday in software development</h2>
+</header>
+<!--Top navigation bar-->
+<nav id="mobileMenu"></nav>
+<nav id="navTop">
+    <ul>
+        <li><a href="index.html">Home</a> </li>
+        <li><a class="current" href="about.html">About Me</a> </li>
+        <li><a href="blog.html">Blog</a> </li>
+        <li><a href="contact.html">Contact</a> </li>
+    </ul>
+</nav>
+<!--aside and left navigation bar-->
+<aside>
+    <nav id="navLeft">
+        <h3>My Profiles</h3>
+        <ul>
+            <li><a target="_blank" href="https://www.linkedin.com/in/shane-teall-4a4563111?trk=hp-identity-name"><img src="images/webicon-linkedin.png">LinkedIn</a></li>
+            <li><a target="_blank" href="https://github.com/ShaneRepo"><img src="images/webicon-github.png">GitHub</a></li>
+            <li><a target="_blank" href="https://twitter.com/ShaneTeall"><img src="images/webicon-twitter.png">Twitter </a></li>
+            <li><a target="_blank" href="misc/siteResume.pdf"><img src="images/webicon-aboutme.png">Resume</a></li>
+        </ul>
+    </nav>
+</aside>
+<!--start of main page content-->
+<main>
+    <div id="accordion">
+        <h3>Student</h3>
+        <div>
+            <p>
+                I recently graduated with a Associate in Applied Science Degree in
+                Computer Information Systems. The Degree has given me a great foundation
+                in computer programming from which I can continue to grow as a developer.
+            </p>
+            <picture>
+                <img src="images/Icons2/medium/%23Diploma.png" alt="Diploma">
+            </picture>
+        </div>
+        <h3>Programming</h3>
+        <div>
+            <p>
+                <a target="_blank" href="https://github.com/ShaneRepo"><img src="images/webicon-github.png">My GitHub</a>
+                <br>
+                I have experience in various languages, frameworks and platforms.
+                Here are a few:
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>C#</li>
+                <li>Java</li>
+                <li>VB.Net</li>
+                <li>MySql & MS Sql Server</li>
+                <li>HTML5 & CSS3</li>
+                <li>Javascript & JQuery</li>
+                <li>Bash shell scripting</li>
+                <li>Database Normalization</li>
+                <li>PHP</li>
+                <li>Android mobile development</li>
+            </ul>
+            </p>
+        </div>
+        <h3>Interests</h3>
+        <div>
+            <ul>
+                <li>Reading documentation and source code</li>
+                <li>Reading <a target="_blank" href="https://www.reddit.com/"> Reddit</a></li>
+                <li>Browsing <a target="_blank" href="https://news.ycombinator.com/"> Hacker News</a></li>
+                <li>Listening to <a target="_blank" href="https://devchat.tv/js-jabber/picks"> DevchatTV</a></li>
+                <li>Listening to <a target="_blank" href="http://fragmentedpodcast.com/"> Fragmented</a></li>
+                <li>Working as a team to achieve a challenging goal</li>
+                <li>Learning and leveling up, everyday</li>
+            </ul>
+            <picture>
+                <img src="images/Icons2/medium/%23Strategy.png" alt="Strategy">
+            </picture>
+        </div>
+        <h3>Future</h3>
+        <div>
+            <p>
+                I want to work for a company that can utilize my programming skills to help
+                achieve profitable applications. I want to surround myself with programmers
+                who care about their code and embrace challenges. Contact me
+                if you are an employer looking for a junior developer!
+            </p>
+            <picture>
+                <img src="images/Icons2/medium/%23Contract.png" alt="Contract">
+            </picture>
+        </div>
+    </div>
+</main>
+<!--page footer-->
+<footer>
+    <p>&copy; 2016 ShaneTeall.com</p>
+    <p>Contact Me: shane4code@gmail.com</p>
+</footer>
+</body>
+</html>

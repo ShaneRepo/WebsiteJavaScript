@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+html {
+    background-color: gray;
+}
+body {
+    width: 90%;
+    max-width: 1024px;
+    margin: 1em auto;
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: 3px 3px 4px 4px black;
+}
+header {
+    background: -webkit-linear-gradient(45deg,white,lightgray 75%,black);
+    background: -moz-linear-gradient(45deg,white,lightgray 75%,black);
+    background: -o-linear-gradient(45deg,white,lightgray 75%,black);
+    padding-bottom: 1em;
+    border-bottom: 2px solid black;
+    height: 120px;
+}
+footer {
+    background: -webkit-linear-gradient(45deg,black,lightgray 75%,white);
+    background: -moz-linear-gradient(45deg,black,lightgray 75%,white);
+    background: -o-linear-gradient(45deg,black,lightgray 75%,white);
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin-top: 1em;
+    border-top: 2px solid black;
+    clear: both;
+}
+header img {
+    float: left;
+    margin-left: .5em;
+}
+header h1,h2 {
+    text-indent: 0.5em;
+    padding-top: .25em;
+    font-weight: bold;
+    color: black;
+    text-shadow: 2px 2px 5px grey;
+}
+#navTop {
+    width: 100%;
+    display: block;
+    clear: both;
+}
+#navTop ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+}
+#navTop ul li {
+    float: left;
+}
+#navTop ul li a {
+    text-align: center;
+    display: block;
+    padding: 1em 0;
+    width: 256px;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+#navTop ul li a:hover, #navTop ul li a:focus {
+    color: red;
+}
+#navTop ul li a.current {
+    color: red;
+}
+#navLeft ul {
+    list-style-type: none;
+    margin-left: 1.25em;
+    margin-bottom: 1.5em;
+    margin-top: 1em;
+}
+#navLeft ul li {
+    width: 80px;
+    margin-bottom: .5em;
+    border: 2px solid black;
+}
+#navLeft ul li a {
+    display: block;
+    padding: .5em .5em .5em .5em;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+}
+#navLeft ul li a:hover,a:focus {
+    color: red;
+}
+aside {
+    width: 15%;
+    max-width: 160px;
+    float: left;
+    padding-top: 1em;
+    padding-right: .25em;
+}
+#navLeft h3 {
+    margin: 0.5em;
+    padding: 1em;
+    background-color: black;
+    text-shadow: 2px 2px 5px red;
+    color: white;
+    font-size: 1.125em;
+    border-radius: 35px;
+}
+main {
+    width: 60%;
+    max-width: 850px;
+    float: left;
+    padding: 1em;
+    margin-left: 5em;
+}
+main img {
+    padding: 1em;
+}
+main ul li {
+    color: red;
+}
+main a:link {
+    text-decoration: none;
+}
+main a:hover {
+    color: red;
+    text-decoration: none;
+}
+.rList {
+    font-size: 150%;
+    font-weight: bold;
+    padding: .25em;
+    text-indent: 2em;
+}
+.tableTitle {
+    color: red;
+    padding: .25em;
+    background-color: black;
+}
+th, td {
+    text-align: center;
+}
+td a {
+    color: black;
+    font-weight: bold;
+}
+tbody th {
+    text-align: left;
+
+}
+tbody tr:nth-child(even) {
+    background-color: lightgrey;
+}
+td:first-child {
+    color: black;
+    font-weight: bold;
+}
+td a:hover, a:focus {
+    color: red;
+}
+.start{
+    font-weight: bold;
+    text-shadow: 2px 2px 5px red;
+}
+footer p {
+    text-align: center;
+    font-weight: bold;
+}
+label {
+    float: left;
+    width: 7em;
+    text-align: right;
+    font-weight: bold;
+}
+input {
+    width: 50%;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+#button {
+    width: 8em;
+    margin-left: 10em;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-color: red;
+    padding: 1em;
+}
+#mobileMenu{
+    display: none;
+}
+@media only screen and (max-width: 1023px){
+    #navTop {
+        display: none;
+    }
+    #mobileMenu{
+        display: block;
+    }
+    #navLeft h3{
+        background-color: white;
+        text-shadow: 2px 2px 5px red;
+        color: black;
+        font-size: 1em;
+    }
+
+}

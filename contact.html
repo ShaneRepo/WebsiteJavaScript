@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A personal portfolio of a student computer programmer">
+    <meta name="keywords" content="contact ,computer programmer">
+    <meta name="author" content="Shane Teall">
+    <title>Contact Me</title>
+    <link rel="shortcut icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#navTop').slicknav({prependTo:"#mobileMenu"});
+        });
+    </script>
+
+</head>
+<body>
+<!--start of the page header-->
+<header>
+    <picture>
+        <img src="images/Icons2/medium/%23Ideas.png" alt="Computer logo" usemap="#logo">
+    </picture>
+    <!--image map to make logo clickable and return to homepage-->
+    <map name ="logo">
+        <area href="index.html" alt="Logo" title="Logo" shape="rect" coords="2,1,144,123">
+    </map>
+    <h1>Shane Teall</h1>
+    <h2>Leveling up everyday in software development</h2>
+</header>
+<!--Top navigation bar-->
+<nav id="mobileMenu"></nav>
+<nav id="navTop">
+    <ul>
+        <li><a href="index.html">Home</a> </li>
+        <li><a href="about.html">About Me</a> </li>
+        <li><a href="blog.html">Blog</a> </li>
+        <li><a class="current" href="contact.html">Contact</a> </li>
+    </ul>
+</nav>
+<!--aside and left navigation bar-->
+<aside>
+    <nav id="navLeft">
+        <h3>My Profiles</h3>
+        <ul>
+            <li><a target="_blank" href="https://www.linkedin.com/in/shane-teall-4a4563111?trk=hp-identity-name"><img src="images/webicon-linkedin.png">LinkedIn</a></li>
+            <li><a target="_blank" href="https://github.com/ShaneRepo"><img src="images/webicon-github.png">GitHub</a></li>
+            <li><a target="_blank" href="https://twitter.com/ShaneTeall"><img src="images/webicon-twitter.png">Twitter </a></li>
+            <li><a target="_blank" href="misc/siteResume.pdf"><img src="images/webicon-aboutme.png">Resume</a></li>
+        </ul>
+    </nav>
+</aside>
+<!--start of main page content-->
+<main>
+    <h1 class="start">Contact Me</h1>
+    <br>
+    <section>
+        <form name="email" action="subscribe.html" method="post">
+            <label for="firstname">First name:</label>
+            <input type="text" name="firstname" id="firstname" required autofocus><br>
+            <label for="lastname">Last name:</label>
+            <input type="text" name="lastname" id="lastname" required ><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required ><br>
+            <label for="phone">Phone #:</label>
+            <input type="tel" name="phone" id="phone"><br>
+            <input type="submit" name="submit" id="button"  value="Subscribe">
+        </form>
+        <picture>
+            <img src="images/Icons2/medium/%23Sending-Email.png" alt="email">
+        </picture>
+    </section>
+</main>
+<!--page footer-->
+<footer>
+    <p>&copy; 2016 ShaneTeall.com</p>
+    <p>Contact Me: shane4code@gmail.com</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="A personal portfolio of a computer programmer">
+    <meta name="keywords" content="portfolio, computer programmer,software developer,Shane Teall">
+    <meta name="author" content="Shane Teall">
+    <title>Shane Teall's Website</title>
+    <link rel="shortcut icon" href="images/logo.ico">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <script src="js/modernizr-custom.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#navTop').slicknav({prependTo:"#mobileMenu"});
+        });
+    </script>
+    <script>
+        $(function() {
+            $( "#tabs" ).tabs();
+        });
+    </script>
+
+</head>
+<body>
+<!--start of the page header-->
+<header>
+    <picture>
+        <img src="images/Icons2/medium/%23Ideas.png" alt="Computer logo" usemap="#logo">
+    </picture>
+    <!--image map to make logo clickable and return to homepage-->
+    <map name ="logo">
+        <area href="index.html" alt="Logo" title="Logo" shape="rect" coords="2,1,144,123">
+    </map>
+    <h1>Shane Teall</h1>
+    <h2>Leveling up everyday in software development</h2>
+</header>
+<!--Top navigation bar-->
+<nav id="mobileMenu"></nav>
+<nav id="navTop">
+    <ul>
+        <li><a class="current" href="index.html">Home</a> </li>
+        <li><a href="about.html">About Me</a> </li>
+        <li><a href="blog.html">Blog</a> </li>
+        <li><a href="contact.html">Contact</a> </li>
+    </ul>
+</nav>
+<!--aside and left navigation bar-->
+<aside>
+    <nav id="navLeft">
+        <h3>My Profiles</h3>
+        <ul>
+            <li><a target="_blank" href="https://www.linkedin.com/in/shane-teall-4a4563111?trk=hp-identity-name"><img src="images/webicon-linkedin.png">LinkedIn</a></li>
+            <li><a target="_blank" href="https://github.com/ShaneRepo"><img src="images/webicon-github.png">GitHub</a></li>
+            <li><a target="_blank" href="https://twitter.com/ShaneTeall"><img src="images/webicon-twitter.png">Twitter </a></li>
+            <li><a target="_blank" href="misc/siteResume.pdf"><img src="images/webicon-aboutme.png">Resume</a></li>
+        </ul>
+    </nav>
+</aside>
+<!--start of main page content-->
+<main>
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">What I Do</a></li>
+            <li><a href="#tabs-2">Highlighted Projects</a></li>
+            <li><a href="#tabs-3">Skills I've Acquired</a></li>
+        </ul>
+        <div id="tabs-1">
+            <p>
+                I am a recent grad who loves coding. I enjoy listening to programming podcasts
+                while I read Reddit and HackerNews. I am constantly reading source code and documentation
+                to better understand the concepts and designs experienced developers use
+                in their day to day lives.<br>
+                <br>
+                I made this website to show off my work and have a platform for my web presence.
+                I hope to learn & grow as a developer while I share resources and knowledge I've picked
+                up along the way.
+            </p>
+        </div>
+        <div id="tabs-2">
+            <ul>
+                <h4>Links to source code on GitHub</h4>
+                <br>
+                <li><a target="_blank" href="https://github.com/ShaneRepo/TicTacToe">Tic Tac Toe</a></li>
+                <li><a target="_blank" href="https://github.com/ShaneRepo/ListProcessingApp">List Processing App</a></li>
+                <li><a target="_blank" href="https://github.com/ShaneRepo/RockPaperScissors">Rock Paper Scissors</a></li>
+                <li><a target="_blank" href="https://github.com/ShaneRepo/RouletteGame">Roulette Game</a></li>
+                <li><a target="_blank" href="https://github.com/ShaneRepo/phpFinal_eStore">PHP E-Store</a></li>
+                <li><a target="_blank" href="https://github.com/ShaneRepo/Fight">Fight</a></li>
+                <li><a target="_blank" href="https://github.com/ShaneRepo/DryCleaners">Dry Cleaners</a></li>
+                <li><a target="_blank" href="https://github.com/ShaneRepo/OBAS">OBAS Baseball Stats</a></li>
+                <li><a target="_blank" href="https://github.com/ShaneRepo/RandGuessJava">Random Guess</a></li>
+                <li><a target="_blank" href="https://github.com/ShaneRepo/MySiteDraft">My Site Draft Source Code</a></li>
+            </ul>
+        </div>
+        <div id="tabs-3">
+            <dl>
+                <dt>Web Markup & Programming</dt>
+                <dd>HTML5, CSS3, XHTML, JavaScript, JQuery, ASP.NET, PHP</dd>
+                <dt>Programming Languages</dt>
+                <dd>C, C++, Java, C#, VB.NET, Python, Ruby</dd>
+                <dt>Database Design & Normalization</dt>
+                <dd>Microsoft SQL Server, MySQL, MongoDB</dd>
+                <dt>Other Useful Skills</dt>
+                <dd>Bash Shell Scripting, Version Control, Android Programming</dd>
+                <dd>Technical Writing, Design Patterns, System Analysis & Design</dd>
+                <dt>Lessons Learned</dt>
+                <dd>Document Everything, Stay Organized, Time Management</dd>
+            </dl>
+        </div>
+    </div>
+    <picture>
+        <img src="images/Icons2/large/%23Computer.png" alt="Wake up & Code!">
+    </picture>
+</main>
+<!--page footer-->
+<footer>
+    <p>&copy; 2016 ShaneTeall.com</p>
+    <p>Contact Me: shane4code@gmail.com</p>
+</footer>
+</body>
+</html>
